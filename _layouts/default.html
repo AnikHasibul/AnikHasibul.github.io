@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+	  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7797672890712694",
+    enable_page_level_ads: true
+  });
+</script>
+    <meta charset="UTF-8">
+   {% seo %}
+   <meta property="og:image" content="https://avatars0.githubusercontent.com/u/25927971?s=640&v=4">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="BE_EwkcRDFlozTrSS5_Pln_1FZhOgwrZxSZ8wLy3GV8" />
+    <meta name="theme-color" content="#ddd">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/app/style.css">
+    <script src="/app/script.js" async defer>
+    </script>
+  </head>
+  <body>
+    <div class="
+	    top 
+	    light-grey" 
+	    style="height:3px">
+    	<div class=
+		"top
+		animate-zoom-infinite
+		black" 
+		style="height:3px">
+        </div>    
+    </div>
+    <footer class="bottom padding-32 center">
+    <div class="animate-bottom large opacity">
+	<span class="animate-fading">
+		Please wait...
+	</span>
+    </div>
+    </footer>
+  </body>
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+</html>
