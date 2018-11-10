@@ -15,7 +15,7 @@ func blogPostHandler(c *router.Context) {
 		disabled: true,
 	}
 	vecty.RenderBody(postCOMP)
-	docRoot := "https://raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/write/posts/"
+	docRoot := "https://raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/posts/"
 	postCOMP.disabled = true
 	vecty.Rerender(postCOMP)
 	defer func() {
@@ -52,7 +52,7 @@ func homeHandler(c *router.Context) {
 			week,
 		)
 	}
-	docRoot := "https://raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/write/weekly/"
+	docRoot := "https://raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/weekly/"
 	homeCOMP.disabled = true
 	vecty.Rerender(homeCOMP)
 	defer func() {
