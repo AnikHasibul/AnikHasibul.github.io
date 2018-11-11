@@ -21,6 +21,9 @@ Now try to change the value of the `\e[101`, example:
 $ echo -e "\e[102mI am green"
 ```
 
+Also 
+
+
 ```sh
 $ echo -e "\e[103mI am yellow"
 ```
@@ -320,6 +323,10 @@ func main() {
 }
 ```
 
+The colored output should be:
+
 ```TXT
 {"Name":"Anik"}
 ```
+
+*My blog doesn't support colored view :p*
