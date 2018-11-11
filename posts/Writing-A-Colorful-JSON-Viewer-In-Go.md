@@ -81,7 +81,7 @@ Here is the final code we are working on! We're taking the cyan color as blue :p
 
 Define the colors
 
-``Go
+```Go
 const Magenta = 95
 const Blue = 94
 EndColor = "\033[0m" // This will take us to the default white color or no color
