@@ -10,6 +10,13 @@ import (
 	"github.com/gopherjs/vecty/prop"
 )
 
+func (v *postComponent) loadDisqus() *vecty.HTML {
+	if v.text == "" {
+		return nil
+	}
+	return disqus()
+}
+
 func disqus() *vecty.HTML {
 	fireEvent()
 	return elem.Div(
