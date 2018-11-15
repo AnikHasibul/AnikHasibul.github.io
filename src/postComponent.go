@@ -113,6 +113,7 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 				),
 			),
 		),
-		vecty.If(v.text != "", footer()),
+
+		vecty.If(v.text != "", disqus(), footer()),
 	)
 }
