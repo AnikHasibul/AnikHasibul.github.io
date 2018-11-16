@@ -6,8 +6,27 @@ import (
 
 // fetch fetches a page with get request
 func fetch(endpoint string) (string, *respErr) {
-	defer func() {
-	}()
+	resp, err := fetchFromCache(endpoint)
+	if err == nil {
+		return resp, nil
+	}
+	return fetchFromServer(endpoint)
+}
+
+// fetchFromCache fetches an url from cache
+func fetchFromCache(endpoint string) (string, *respErr) {
+	resp, err := getFromCache(endpoint)
+	if err != nil {
+		return "", &respErr{
+			Text: err.Error(),
+		}
+	}
+	go fetchFromServer(endpoint)
+	return resp, nil
+}
+
+// fetchFromServer fetches an url from the server
+func fetchFromServer(endpoint string) (string, *respErr) {
 	req := xhr.NewRequest(
 		"GET",
 		endpoint,
@@ -21,5 +40,9 @@ func fetch(endpoint string) (string, *respErr) {
 			Text:   err.Error(),
 		}
 	}
+	go updateCache(
+		endpoint,
+		req.ResponseText,
+	)
 	return req.ResponseText, nil
 }
