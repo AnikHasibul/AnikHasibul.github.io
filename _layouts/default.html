@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" manifest="/cache.appcache">
   <head>
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -41,7 +41,7 @@
         </div>    
     </div>
     <footer class="bottom padding-32 center">
-    <div class="animate-bottom large opacity">
+    <div class="animate-bottom large">
 	<span class="animate-fading">
 		Please wait...
 	</span>
