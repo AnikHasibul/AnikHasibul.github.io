@@ -118,7 +118,8 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 						vecty.Markup(
 							vecty.Class(
 								"center",
-								"xxlarge",
+								"serif",
+								"xlarge",
 							),
 						),
 
