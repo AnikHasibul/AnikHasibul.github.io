@@ -29,7 +29,7 @@ func fetchFromCache(endpoint string) (string, *respErr) {
 func fetchFromServer(endpoint string) (string, *respErr) {
 	req := xhr.NewRequest(
 		"GET",
-		endpoint,
+		"https://loserdevapi.herokuapp.com/"+endpoint,
 	)
 	req.Timeout = 15000
 	req.ResponseType = xhr.Text
@@ -40,9 +40,10 @@ func fetchFromServer(endpoint string) (string, *respErr) {
 			Text:   err.Error(),
 		}
 	}
+	content := req.ResponseText
 	go updateCache(
 		endpoint,
-		req.ResponseText,
+		content,
 	)
-	return req.ResponseText, nil
+	return content, nil
 }

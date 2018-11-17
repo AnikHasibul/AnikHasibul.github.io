@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/go-humble/router"
+	"github.com/gopherjs/gopherjs/js"
 	"github.com/gopherjs/vecty"
-	ghmd "github.com/shurcooL/github_flavored_markdown"
 )
 
 // blogPostHandler : the single page application handler
@@ -15,7 +15,7 @@ func blogPostHandler(c *router.Context) {
 		disabled: true,
 	}
 	vecty.RenderBody(postCOMP)
-	docRoot := "https://raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/posts/"
+	docRoot := "raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/posts/"
 	postCOMP.disabled = true
 	vecty.Rerender(postCOMP)
 	defer func() {
@@ -28,13 +28,11 @@ func blogPostHandler(c *router.Context) {
 	if err != nil {
 		resp = err.Error()
 	}
-	postCOMP.text = string(
-		ghmd.Markdown(
-			[]byte(resp),
-		),
-	)
+	postCOMP.text = string(resp)
 	vecty.SetTitle(getTitle(c.Params["page"]) + " :: Hasibul Hasan (Anik) | @AnikHasibul || anikhasibul.github.io")
 	vecty.Rerender(postCOMP)
+	js.Global.Get("window").
+		Call("scrollTo", 0, 0)
 }
 
 // homeHandler : the single page application handler
@@ -52,7 +50,7 @@ func homeHandler(c *router.Context) {
 			week,
 		)
 	}
-	docRoot := "https://raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/weekly/"
+	docRoot := "raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/weekly/"
 	homeCOMP.disabled = true
 	vecty.Rerender(homeCOMP)
 	defer func() {
@@ -65,12 +63,10 @@ func homeHandler(c *router.Context) {
 	if err != nil {
 		resp = err.Error()
 	}
-	homeCOMP.text = string(
-		ghmd.Markdown(
-			[]byte(resp),
-		),
-	)
+	homeCOMP.text = string(resp)
 	vecty.RenderBody(homeCOMP)
+	js.Global.Get("window").
+		Call("scrollTo", 0, 0)
 }
 
 // contactPageHandler : the single page application handler
