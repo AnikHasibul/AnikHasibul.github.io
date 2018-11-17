@@ -65,7 +65,6 @@ For further contact: anikhasibul@outlook.com
 					"btn",
 					"indigo",
 					"round",
-					"animate-right",
 				),
 				vecty.Style(
 					"width",
@@ -94,7 +93,6 @@ For further contact: anikhasibul@outlook.com
 				vecty.Class(
 					"btn",
 					"round",
-					"animate-right",
 				),
 				vecty.Style(
 					"width",
@@ -132,7 +130,6 @@ For further contact: anikhasibul@outlook.com
 					"btn",
 					"round",
 					"black",
-					"animate-right",
 				),
 				vecty.Style(
 					"width",

@@ -105,7 +105,7 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 					vecty.Class(
 						"col", "l4", "m8",
 						"markdown-body",
-						"animate-zoom",
+						"animate-opacity",
 						"container",
 						"padding-32",
 					),
