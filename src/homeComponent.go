@@ -29,6 +29,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 					"padding-16",
 					"white",
 					"bar",
+					"center",
 					"top",
 					"border-blue",
 				),
@@ -53,13 +54,14 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 			),
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Class(
+						"right",
+					),
 					prop.Href("/contact"),
 				),
 				elem.Image(
 					vecty.Markup(
 						vecty.Class(
-							"xlarge",
-							"right",
 							"circle",
 						),
 						vecty.Style(
@@ -100,9 +102,36 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 						"markdown-body",
 						"animate-opacity",
 						"container",
-						"padding-32",
 					),
-					vecty.UnsafeHTML(v.text),
+				),
+				elem.Div(
+					vecty.Markup(
+						vecty.Class(
+							"panel",
+							"white",
+							"card-4",
+							"text-grey",
+							"padding-16",
+						),
+					),
+					elem.Div(
+						vecty.Markup(
+							vecty.Class(
+								"center",
+								"xxlarge",
+							),
+						),
+
+						vecty.Text("🎉"),
+						elem.Break(),
+						vecty.Text("Hurray!"),
+					),
+					vecty.Text("You are seeing a preview version of this blog! A regular version will come on 1st January 2019! 🎉🎉🎉"),
+				),
+				elem.Div(
+					vecty.Markup(
+						vecty.UnsafeHTML(v.text),
+					),
 				),
 			),
 			elem.Div(
