@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"strconv"
 	"time"
 
 	"github.com/gopherjs/gopherjs/js"
@@ -40,7 +40,7 @@ func disqus() *vecty.HTML {
 				prop.Src(
 					"https://loserdev.disqus.com/embed.js",
 				),
-				vecty.Attribute("data-timestamp", fmt.Sprintf("%d", time.Now().Unix())),
+				vecty.Attribute("data-timestamp", strconv.FormatInt(time.Now().Unix(), 10)),
 			),
 		),
 	)
@@ -49,7 +49,7 @@ func disqus() *vecty.HTML {
 
 func fireEvent() {
 	js.Global.Set("disqus_config", func(this *js.Object) {
-		this.Get("page").Set("url", w.Location().Href)
-		this.Get("page").Set("identifier ", w.Location().Href)
+		this.Get("page").Set("url", js.Global.Get("location").Get("href"))
+		this.Get("page").Set("identifier ", js.Global.Get("location").Get("href"))
 	})
 }
