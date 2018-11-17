@@ -99,7 +99,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 			vecty.Markup(
 				vecty.Class(
 					"col", "l4", "m8",
-					"animate-right",
+					"animate-zoom",
 					"container",
 					"padding-32",
 					"center",
@@ -152,7 +152,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 						"btn",
 						"black",
 						"xlarge",
-						"animate-right",
+						"animate-zoom",
 					),
 					vecty.Style(
 						"width",
@@ -178,7 +178,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 						"btn",
 						"indigo",
 						"xlarge",
-						"animate-right",
+						"animate-zoom",
 					),
 					vecty.Style(
 						"width",
@@ -207,7 +207,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 					vecty.Class(
 						"btn",
 						"xlarge",
-						"animate-right",
+						"animate-zoom",
 					),
 					vecty.Style(
 						"width",
@@ -245,7 +245,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 						"btn",
 						"xlarge",
 						"black",
-						"animate-right",
+						"animate-zoom",
 					),
 					vecty.Style(
 						"width",

@@ -40,7 +40,6 @@ For further contact: anikhasibul@outlook.com
 					"btn",
 					"black",
 					"round",
-					"animate-right",
 				),
 				vecty.Style(
 					"width",

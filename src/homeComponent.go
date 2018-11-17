@@ -98,7 +98,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 					vecty.Class(
 						"col", "l6", "m8",
 						"markdown-body",
-						"animate-left",
+						"animate-zoom",
 						"container",
 						"padding-32",
 					),
