@@ -49,6 +49,10 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 							"disabled",
 						),
 					),
+					vecty.Attribute(
+						"name",
+						"Back to homepage.",
+					),
 					prop.Href("/"),
 					vecty.Style(
 						"text-decoration",
@@ -58,6 +62,10 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 			),
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Attribute(
+						"name",
+						"contact",
+					),
 					prop.Href("/contact"),
 				),
 				elem.Image(
@@ -143,6 +151,14 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Attribute(
+						"rel",
+						"noopener",
+					),
+					vecty.Attribute(
+						"name",
+						"Github profile.",
+					),
 					prop.Href(
 						"https://github.com/AnikHasibul",
 					),
@@ -169,6 +185,14 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 			),
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Attribute(
+						"rel",
+						"noopener",
+					),
+					vecty.Attribute(
+						"name",
+						"Facebook profile.",
+					),
 					prop.Href(
 						"https://fb.me/AnikHasibul.sh",
 					),
@@ -199,6 +223,14 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 			),
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Attribute(
+						"rel",
+						"noopener",
+					),
+					vecty.Attribute(
+						"name",
+						"Twitter profile.",
+					),
 					prop.Href(
 						"https://twitter.com/iAmAnikHasibul",
 					),
@@ -236,6 +268,14 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 			),
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Attribute(
+						"rel",
+						"noopener",
+					),
+					vecty.Attribute(
+						"name",
+						"Medium profile.",
+					),
 					prop.Href(
 						"https://medium.com/@AnikHasibul",
 					),

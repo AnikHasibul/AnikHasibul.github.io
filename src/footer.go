@@ -29,6 +29,14 @@ For further contact: anikhasibul@outlook.com
 		),
 		elem.Anchor(
 			vecty.Markup(
+				vecty.Attribute(
+					"rel",
+					"noopener",
+				),
+				vecty.Attribute(
+					"name",
+					"Github profile.",
+				),
 				prop.Href(
 					"https://github.com/AnikHasibul",
 				),
@@ -54,6 +62,14 @@ For further contact: anikhasibul@outlook.com
 		),
 		elem.Anchor(
 			vecty.Markup(
+				vecty.Attribute(
+					"rel",
+					"noopener",
+				),
+				vecty.Attribute(
+					"name",
+					"Facebook profile.",
+				),
 				prop.Href(
 					"https://fb.me/AnikHasibul.sh",
 				),
@@ -83,6 +99,14 @@ For further contact: anikhasibul@outlook.com
 		),
 		elem.Anchor(
 			vecty.Markup(
+				vecty.Attribute(
+					"rel",
+					"noopener",
+				),
+				vecty.Attribute(
+					"name",
+					"Twitter profile.",
+				),
 				prop.Href(
 					"https://twitter.com/iAmAnikHasibul",
 				),
@@ -119,6 +143,14 @@ For further contact: anikhasibul@outlook.com
 		),
 		elem.Anchor(
 			vecty.Markup(
+				vecty.Attribute(
+					"rel",
+					"noopener",
+				),
+				vecty.Attribute(
+					"name",
+					"Medium profile.",
+				),
 				prop.Href(
 					"https://medium.com/@AnikHasibul",
 				),

@@ -44,6 +44,10 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 						"xlarge",
 						"left",
 					),
+					vecty.Attribute(
+						"name",
+						"Refresh homepage.",
+					),
 					prop.Href("/"),
 					vecty.Style(
 						"text-decoration",
@@ -56,6 +60,10 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 				vecty.Markup(
 					vecty.Class(
 						"right",
+					),
+					vecty.Attribute(
+						"name",
+						"contact",
 					),
 					prop.Href("/contact"),
 				),

@@ -49,6 +49,10 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 							"disabled",
 						),
 					),
+					vecty.Attribute(
+						"name",
+						"Back to homepage.",
+					),
 					prop.Href("/"),
 					vecty.Style(
 						"text-decoration",
@@ -59,6 +63,10 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 			),
 			elem.Anchor(
 				vecty.Markup(
+					vecty.Attribute(
+						"name",
+						"contact",
+					),
 					prop.Href("/contact"),
 				),
 				elem.Image(
