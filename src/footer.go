@@ -10,8 +10,8 @@ func footer() *vecty.HTML {
 	return elem.Footer(
 		vecty.Markup(
 			vecty.Class(
-				"light-grey",
-				"text-grey",
+				"grey",
+				"text-black",
 				"small",
 				"center",
 				"container",
@@ -124,7 +124,7 @@ For further contact: anikhasibul@outlook.com
 				),
 				vecty.Style(
 					"background",
-					"#4289f4",
+					"#095A9B",
 				),
 				vecty.Style(
 					"color",
