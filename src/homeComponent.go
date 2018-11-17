@@ -72,6 +72,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 							"height",
 							"32px",
 						),
+						vecty.Attribute("Alt", "Profile picture of author."),
 						prop.Src("/app/avatar.jpg"),
 					),
 				),

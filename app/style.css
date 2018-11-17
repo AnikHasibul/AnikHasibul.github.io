@@ -2164,12 +2164,13 @@ a {
 }
 
 .markdown-body a {
-  color: #4289f4;
+  color: #400000;
+  border-bottom: 1px dashed #400000;
   text-decoration: none;
 }
 
 .markdown-body a:hover {
-  border-bottom: 1px dashed #4289f4;
+  border-bottom: 1px solid #400000;
 }
 
 .markdown-body strong {
