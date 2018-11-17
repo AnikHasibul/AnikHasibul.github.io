@@ -70,7 +70,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 							"height",
 							"32px",
 						),
-						prop.Src("https://avatars0.githubusercontent.com/u/25927971?s=220&v=4"),
+						prop.Src("/app/avatar.jpg"),
 					),
 				),
 			),

@@ -75,7 +75,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 							"height",
 							"32px",
 						),
-						prop.Src("https://avatars0.githubusercontent.com/u/25927971?s=220&v=4"),
+						prop.Src("/app/avatar.jpg"),
 					),
 				),
 			),
@@ -119,7 +119,7 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 						"height",
 						"120px",
 					),
-					prop.Src("https://avatars0.githubusercontent.com/u/25927971?s=220&v=4"),
+					prop.Src("/app/avatar.jpg"),
 				),
 			),
 			elem.Heading2(
