@@ -21,15 +21,16 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 				"overflow",
 				"hidden",
 			),
+			vecty.Class("darker"),
 		),
 		elem.Header(
 			vecty.Markup(
 				vecty.Class(
 					"container",
 					"padding-16",
-					"white",
 					"bar",
 					"top",
+					"darker",
 					"border-blue",
 				),
 				vecty.Style(
@@ -92,217 +93,239 @@ func (v *contactComponent) Render() vecty.ComponentOrHTML {
 		elem.Div(
 			vecty.Markup(
 				vecty.Class(
-					"padding-32",
+					"row",
+					"dark",
 				),
 			),
-		),
-		elem.Div(
-			vecty.Markup(
-				vecty.Class(
-					"col", "l3", "m2",
-					"padding",
-				),
-			),
-		),
-		elem.Div(
-			vecty.Markup(
-				vecty.Class(
-					"col", "l4", "m8",
-					"animate-opacity",
-					"container",
-					"padding-32",
-					"center",
-				),
-			),
-			elem.Image(
+			elem.Div(
 				vecty.Markup(
 					vecty.Class(
-						"xlarge",
-						"circle",
+						"padding-32",
 					),
-					vecty.Style(
-						"width",
-						"120px",
-					),
-					vecty.Style(
-						"height",
-						"120px",
-					),
-					vecty.Attribute("Alt", "Profile picture of author."),
-					prop.Src("/app/avatar.jpg"),
 				),
 			),
-			elem.Heading2(
+			elem.Div(
 				vecty.Markup(
 					vecty.Class(
-						"serif",
+						"col", "l3", "m2",
+						"padding",
 					),
 				),
-				vecty.Text("Hasibul Hasan (Anik)"),
 			),
-			elem.Heading5(
+			elem.Div(
 				vecty.Markup(
 					vecty.Class(
-						"opacity",
+						"col", "l4", "m8",
+						"animate-opacity",
+						"container",
+						"padding-32",
+						"center",
 					),
 				),
-				vecty.Text("Still I didn't do anything to put on bio."),
-			),
+				elem.Image(
+					vecty.Markup(
+						vecty.Class(
+							"xlarge",
+							"circle",
+						),
+						vecty.Style(
+							"width",
+							"120px",
+						),
+						vecty.Style(
+							"height",
+							"120px",
+						),
+						vecty.Attribute("Alt", "Profile picture of author."),
+						prop.Src("/app/avatar.jpg"),
+					),
+				),
+				elem.Heading2(
+					vecty.Markup(
+						vecty.Class(
+							"serif",
+						),
+					),
+					vecty.Text("Hasibul Hasan (Anik)"),
+				),
+				elem.Heading5(
+					vecty.Markup(
+						vecty.Class(
+							"opacity",
+						),
+					),
+					vecty.Text("Still I didn't do anything to put on bio."),
+				),
 
-			elem.Anchor(
-				vecty.Markup(
-					vecty.Attribute(
-						"rel",
-						"noopener",
+				elem.Anchor(
+					vecty.Markup(
+						vecty.Attribute(
+							"rel",
+							"noopener",
+						),
+						vecty.Attribute(
+							"name",
+							"Github profile.",
+						),
+						prop.Href(
+							"https://github.com/AnikHasibul",
+						),
+						vecty.Attribute(
+							"target",
+							"_blank",
+						),
+						vecty.Class(
+							"btn",
+							"black",
+							"xlarge",
+							"animate-opacity",
+						),
+						vecty.Style(
+							"width",
+							"48px",
+						),
+						vecty.Style(
+							"height",
+							"48px",
+						),
 					),
-					vecty.Attribute(
-						"name",
-						"Github profile.",
+					vecty.Text("G"),
+				),
+				elem.Anchor(
+					vecty.Markup(
+						vecty.Attribute(
+							"rel",
+							"noopener",
+						),
+						vecty.Attribute(
+							"name",
+							"Facebook profile.",
+						),
+						prop.Href(
+							"https://fb.me/AnikHasibul.sh",
+						),
+						vecty.Attribute(
+							"target",
+							"_blank",
+						),
+						vecty.Class(
+							"btn",
+							"indigo",
+							"xlarge",
+							"animate-opacity",
+						),
+						vecty.Style(
+							"width",
+							"48px",
+						),
+						vecty.Style(
+							"height",
+							"48px",
+						),
+						vecty.Style(
+							"margin-left",
+							"3px",
+						),
 					),
-					prop.Href(
-						"https://github.com/AnikHasibul",
+					vecty.Text("F"),
+				),
+				elem.Anchor(
+					vecty.Markup(
+						vecty.Attribute(
+							"rel",
+							"noopener",
+						),
+						vecty.Attribute(
+							"name",
+							"Twitter profile.",
+						),
+						prop.Href(
+							"https://twitter.com/iAmAnikHasibul",
+						),
+						vecty.Attribute(
+							"target",
+							"_blank",
+						),
+						vecty.Class(
+							"btn",
+							"xlarge",
+							"animate-opacity",
+						),
+						vecty.Style(
+							"width",
+							"48px",
+						),
+						vecty.Style(
+							"background",
+							"#4289f4",
+						),
+						vecty.Style(
+							"color",
+							"#fff",
+						),
+						vecty.Style(
+							"height",
+							"48px",
+						),
+						vecty.Style(
+							"margin-left",
+							"3px",
+						),
 					),
-					vecty.Attribute(
-						"target",
-						"_blank",
+					vecty.Text("T"),
+				),
+				elem.Anchor(
+					vecty.Markup(
+						vecty.Attribute(
+							"rel",
+							"noopener",
+						),
+						vecty.Attribute(
+							"name",
+							"Medium profile.",
+						),
+						prop.Href(
+							"https://medium.com/@AnikHasibul",
+						),
+						vecty.Attribute(
+							"target",
+							"_blank",
+						),
+						vecty.Class(
+							"btn",
+							"xlarge",
+							"black",
+							"animate-opacity",
+						),
+						vecty.Style(
+							"width",
+							"48px",
+						),
+						vecty.Style(
+							"height",
+							"48px",
+						),
+						vecty.Style(
+							"margin-left",
+							"3px",
+						),
 					),
-					vecty.Class(
-						"btn",
-						"black",
-						"xlarge",
-						"animate-opacity",
-					),
-					vecty.Style(
-						"width",
-						"48px",
-					),
-					vecty.Style(
-						"height",
-						"48px",
+					vecty.Text("M"),
+				),
+				elem.Div(
+					vecty.Markup(
+						vecty.Class(
+							"padding-32",
+						),
 					),
 				),
-				vecty.Text("G"),
-			),
-			elem.Anchor(
-				vecty.Markup(
-					vecty.Attribute(
-						"rel",
-						"noopener",
-					),
-					vecty.Attribute(
-						"name",
-						"Facebook profile.",
-					),
-					prop.Href(
-						"https://fb.me/AnikHasibul.sh",
-					),
-					vecty.Attribute(
-						"target",
-						"_blank",
-					),
-					vecty.Class(
-						"btn",
-						"indigo",
-						"xlarge",
-						"animate-opacity",
-					),
-					vecty.Style(
-						"width",
-						"48px",
-					),
-					vecty.Style(
-						"height",
-						"48px",
-					),
-					vecty.Style(
-						"margin-left",
-						"3px",
+				elem.Div(
+					vecty.Markup(
+						vecty.Class(
+							"padding-32",
+						),
 					),
 				),
-				vecty.Text("F"),
-			),
-			elem.Anchor(
-				vecty.Markup(
-					vecty.Attribute(
-						"rel",
-						"noopener",
-					),
-					vecty.Attribute(
-						"name",
-						"Twitter profile.",
-					),
-					prop.Href(
-						"https://twitter.com/iAmAnikHasibul",
-					),
-					vecty.Attribute(
-						"target",
-						"_blank",
-					),
-					vecty.Class(
-						"btn",
-						"xlarge",
-						"animate-opacity",
-					),
-					vecty.Style(
-						"width",
-						"48px",
-					),
-					vecty.Style(
-						"background",
-						"#4289f4",
-					),
-					vecty.Style(
-						"color",
-						"#fff",
-					),
-					vecty.Style(
-						"height",
-						"48px",
-					),
-					vecty.Style(
-						"margin-left",
-						"3px",
-					),
-				),
-				vecty.Text("T"),
-			),
-			elem.Anchor(
-				vecty.Markup(
-					vecty.Attribute(
-						"rel",
-						"noopener",
-					),
-					vecty.Attribute(
-						"name",
-						"Medium profile.",
-					),
-					prop.Href(
-						"https://medium.com/@AnikHasibul",
-					),
-					vecty.Attribute(
-						"target",
-						"_blank",
-					),
-					vecty.Class(
-						"btn",
-						"xlarge",
-						"black",
-						"animate-opacity",
-					),
-					vecty.Style(
-						"width",
-						"48px",
-					),
-					vecty.Style(
-						"height",
-						"48px",
-					),
-					vecty.Style(
-						"margin-left",
-						"3px",
-					),
-				),
-				vecty.Text("M"),
 			),
 		),
 	)

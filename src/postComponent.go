@@ -117,7 +117,6 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 						"markdown-body",
 						"animate-opacity",
 						"container",
-						"padding-32",
 					),
 				),
 				elem.Div(
