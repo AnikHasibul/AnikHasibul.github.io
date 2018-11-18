@@ -19,8 +19,6 @@
     <meta name="google-site-verification" content="BE_EwkcRDFlozTrSS5_Pln_1FZhOgwrZxSZ8wLy3GV8" />
     <meta name="theme-color" content="#141D26">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  </head>
-  <body class="darker">
 <style>
 html,
 body {
@@ -66,6 +64,23 @@ html {
 	}
 }
 
+.animate-bottom {
+	position: relative;
+	animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+	from {
+		bottom: -300px;
+		opacity: 0
+	}
+	to {
+		bottom: 0;
+		opacity: 1
+	}
+}
+
+
 .animate-zoom-infinite {
 	animation: animatezoominf 2s infinite
 }
@@ -86,6 +101,12 @@ html {
 	color: #dfdfdf;
 }
 
+.blue {
+	color: #fff!important;
+	background-color: #79ACF7!important
+}
+
+
 .darker {
 	background-color: #141D26!important;
 	color: #dfdfdf;
@@ -100,8 +121,14 @@ html {
 	text-align: center;
 }
 
+.large {
+	font-size: 18px!important
+}
+
 
 </style>
+  </head>
+  <body class="darker">
     <div class="
 	    top 
 	    dark" 
