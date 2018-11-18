@@ -10,8 +10,7 @@ func footer() *vecty.HTML {
 	return elem.Footer(
 		vecty.Markup(
 			vecty.Class(
-				"grey",
-				"text-black",
+				"darker",
 				"small",
 				"center",
 				"container",

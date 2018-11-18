@@ -24,6 +24,7 @@ func disqus() *vecty.HTML {
 			vecty.Markup(
 				vecty.Class(
 					"panel",
+					"dark",
 					"padding",
 					"container",
 					"padding-16",

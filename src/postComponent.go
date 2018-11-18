@@ -21,13 +21,14 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 				"overflow",
 				"hidden",
 			),
+			vecty.Class("darker"),
 		),
 		elem.Header(
 			vecty.Markup(
 				vecty.Class(
 					"container",
 					"padding-16",
-					"white",
+					"darker",
 					"bar",
 					"top",
 					"border-blue",
@@ -90,9 +91,9 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 				),
 			),
 		),
-		elem.Div(
+		vecty.If(v.text != "", elem.Div(
 			vecty.Markup(
-				vecty.Class("row"),
+				vecty.Class("row", "dark"),
 			),
 			elem.Div(
 				vecty.Markup(
@@ -118,11 +119,16 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 						"container",
 						"padding-32",
 					),
-					vecty.UnsafeHTML(v.text),
 				),
+				elem.Div(
+					vecty.Markup(
+						vecty.UnsafeHTML(v.text),
+					),
+				),
+				v.loadDisqus(),
 			),
 		),
 
-		vecty.If(v.text != "", v.loadDisqus(), footer()),
+			footer()),
 	)
 }

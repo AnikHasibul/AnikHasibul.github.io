@@ -21,13 +21,14 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 				"overflow",
 				"hidden",
 			),
+			vecty.Class("darker"),
 		),
 		elem.Header(
 			vecty.Markup(
 				vecty.Class(
 					"container",
 					"padding-16",
-					"white",
+					"darker",
 					"bar",
 					"center",
 					"top",
@@ -86,9 +87,9 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 				),
 			),
 		),
-		elem.Div(
+		vecty.If(v.text != "", elem.Div(
 			vecty.Markup(
-				vecty.Class("row"),
+				vecty.Class("row", "dark"),
 			),
 			elem.Div(
 				vecty.Markup(
@@ -117,9 +118,8 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 					vecty.Markup(
 						vecty.Class(
 							"panel",
-							"white",
 							"card-4",
-							"text-grey",
+							"text-blue",
 							"padding-16",
 						),
 					),
@@ -152,6 +152,6 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 				),
 			),
 		),
-		vecty.If(v.text != "", footer()),
+			footer()),
 	)
 }

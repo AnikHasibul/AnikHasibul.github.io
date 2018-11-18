@@ -1490,7 +1490,7 @@ a {
 .blue,
 .hover-blue:hover {
 	color: #fff!important;
-	background-color: #0055FF!important
+	background-color: #79ACF7!important
 }
 
 .light-blue,
@@ -1675,7 +1675,7 @@ a {
 
 .text-blue,
 .hover-text-blue:hover {
-	color: #0055FF!important
+	color: #79ACF7!important
 }
 
 .text-light-blue,
@@ -1959,6 +1959,17 @@ a {
 	border-color: #e7ffff!important
 }
 
+.dark {
+	background-color: #243447!important;
+	color: #dfdfdf;
+}
+
+.darker {
+	background-color: #141D26!important;
+	color: #dfdfdf;
+}
+
+
 .input {
 	outline: 0;
 }
@@ -1968,7 +1979,7 @@ a {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
-  color: #444;
+  color: #dfdfdf;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;
   line-height: 1.6;
@@ -1982,17 +1993,17 @@ a {
 
 .markdown-body .pl-c1,
 .markdown-body .pl-s .pl-v {
-  color: #005cc5;
+  color: #ff00ff;
 }
 
 .markdown-body .pl-e,
 .markdown-body .pl-en {
-  color: #6f42c1;
+  color: #00dddd;
 }
 
 .markdown-body .pl-smi,
 .markdown-body .pl-s .pl-s1 {
-  color: #24292e;
+  color: #ccdd00;
 }
 
 .markdown-body .pl-ent {
@@ -2000,7 +2011,7 @@ a {
 }
 
 .markdown-body .pl-k {
-  color: #d73a49;
+  color: #26e22e;
 }
 
 .markdown-body .pl-s,
@@ -2010,7 +2021,7 @@ a {
 .markdown-body .pl-sr .pl-cce,
 .markdown-body .pl-sr .pl-sre,
 .markdown-body .pl-sr .pl-sra {
-  color: #032f62;
+  color: #ffff00;
 }
 
 .markdown-body .pl-v,
@@ -2164,12 +2175,12 @@ a {
 }
 
 .markdown-body a {
-  color: #005200;
+  color: #79ACF7;
   text-decoration: none;
 }
 
 .markdown-body a:hover {
-  border-bottom: 1px dashed #005200;
+  border-bottom: 1px dashed #ddd;
 }
 
 .markdown-body strong {
@@ -2373,7 +2384,7 @@ a {
   height: 0.25em;
   padding: 0;
   margin: 24px 0;
-  background-color: #e1e4e8;
+  background-color: #555;
   border: 0;
 }
 
@@ -2593,7 +2604,10 @@ a {
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: #141D26;
+  color: #ccc;
+  font-weight: bold;
+  border: 1px solid #4289f4;
   border-radius: 3px;
 }
 

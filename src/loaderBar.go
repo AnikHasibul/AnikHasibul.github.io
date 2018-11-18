@@ -12,7 +12,7 @@ func l(val bool) *vecty.HTML {
 	}
 	return elem.Div(
 		vecty.Markup(
-			vecty.Class("light-grey"),
+			vecty.Class("dark"),
 			vecty.Style("position", "fixed"),
 			vecty.Style("z-index", "999"),
 			vecty.Style("top", "0"),
@@ -23,7 +23,7 @@ func l(val bool) *vecty.HTML {
 		elem.Div(
 			vecty.Markup(
 				vecty.Class(
-					"black",
+					"blue",
 					"round-large",
 					"animate-zoom-infinite",
 				),
