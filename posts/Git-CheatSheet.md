@@ -455,4 +455,4 @@ Security
 -----------
 
 Hide Git on the web via `.htaccess`: `RedirectMatch 404 /\.git`
-(more info here:[http://stackoverflow.com/a/17916515/1815847](http://stackoverflow.com/a/17916515/1815847))
+(more info here: [http://stackoverflow.com/a/17916515/1815847](http://stackoverflow.com/a/17916515/1815847))
