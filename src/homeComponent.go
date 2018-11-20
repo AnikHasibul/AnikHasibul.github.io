@@ -143,6 +143,13 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 						vecty.UnsafeHTML(v.text),
 					),
 				),
+				elem.Div(
+					vecty.Markup(
+						vecty.Class(
+							"padding-32",
+						),
+					),
+				),
 			),
 			elem.Div(
 				vecty.Markup(
