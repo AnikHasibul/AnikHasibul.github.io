@@ -3,7 +3,6 @@
 Hi there, here is a curated list of deep learning resources by many contributors. And this list has been taken from [dipakkr/A-to-Z-Resources-for-Students](https://github.com/dipakkr/A-to-Z-Resources-for-Students).
 
 
-> [**Browse this link for detailed information on Machine Learning and Deep Learning**](ML.md)
 
 ## Best Online Courses
     
