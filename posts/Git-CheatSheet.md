@@ -10,27 +10,6 @@ Git is a free and open source version control system that helps you track change
 
 Learn about version control and keeping your projects organized with this Git cheatsheet. 
 
-## Index
-
-1. [Global Settings](#1-global-settings)
-2. [Setup](#2-setup)
-3. [Help](#3-help)
-4. [General](#4-general)
-5. [Reset](#5-reset)
-6. [Update and Delete](#6-update-and-delete)
-7. [Branch](#7-branch)
-8. [Merge](#8-merge)
-9. [Stash](#9-stash)
-10. [Gitignore and Gitkeep](#10-gitignore-and-gitkeep)
-11. [Log](#11-log)
-12. [Compare](#12-compare)
-13. [Releases and Version Tags](#13-releases-and-version-tags)
-14. [Collaborate](#14-collaborate)
-15. [Archive / Troubleshooting / Security](#15-archive)
-16. [Reflog](#16-reflog)
-
-
-
 ### 1. Global Settings
 -----------
 
@@ -455,4 +434,4 @@ Security
 -----------
 
 Hide Git on the web via `.htaccess`: `RedirectMatch 404 /\.git`
-(more info here:[http://stackoverflow.com/a/17916515/1815847](http://stackoverflow.com/a/17916515/1815847))
+(more info here: [http://stackoverflow.com/a/17916515/1815847](http://stackoverflow.com/a/17916515/1815847))
