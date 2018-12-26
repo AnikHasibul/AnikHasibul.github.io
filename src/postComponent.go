@@ -30,7 +30,6 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 					"padding-16",
 					"darker",
 					"bar",
-					"top",
 					"border-blue",
 				),
 				vecty.Style(
@@ -98,13 +97,6 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 			elem.Div(
 				vecty.Markup(
 					vecty.Class(
-						"padding-32",
-					),
-				),
-			),
-			elem.Div(
-				vecty.Markup(
-					vecty.Class(
 						"col", "l2", "m2",
 						"padding",
 					),
@@ -115,6 +107,7 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 					vecty.Class(
 						"col", "l8", "m8",
 						"markdown-body",
+						"post-body",
 						"animate-opacity",
 						"container",
 					),

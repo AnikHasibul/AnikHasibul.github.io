@@ -34,7 +34,6 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 					"darker",
 					"bar",
 					"center",
-					"top",
 					"border-blue",
 				),
 				vecty.Style(
@@ -94,13 +93,6 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 			vecty.Markup(
 				vecty.Class("row", "dark"),
 			),
-			elem.Div(
-				vecty.Markup(
-					vecty.Class(
-						"padding-32",
-					),
-				),
-			),
 			elem.Div(vecty.Markup(
 				vecty.Class(
 					"col", "l2", "m2",
@@ -116,30 +108,6 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 						"animate-opacity",
 						"container",
 					),
-				),
-				elem.Div(
-					vecty.Markup(
-						vecty.Class(
-							"panel",
-							"card-4",
-							"text-blue",
-							"padding-16",
-						),
-					),
-					elem.Div(
-						vecty.Markup(
-							vecty.Class(
-								"center",
-								"serif",
-								"xlarge",
-							),
-						),
-
-						vecty.Text("🎉"),
-						elem.Break(),
-						vecty.Text("Hurray!"),
-					),
-					vecty.Text("You are seeing a preview version of this blog! A regular version will come on 1st January 2019! 🎉🎉🎉"),
 				),
 				elem.Div(
 					vecty.Markup(
