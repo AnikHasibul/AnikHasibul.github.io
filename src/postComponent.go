@@ -105,7 +105,7 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 			elem.Div(
 				vecty.Markup(
 					vecty.Class(
-						"col", "l3", "m2",
+						"col", "l2", "m2",
 						"padding",
 					),
 				),
@@ -113,7 +113,7 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 			elem.Div(
 				vecty.Markup(
 					vecty.Class(
-						"col", "l4", "m8",
+						"col", "l8", "m8",
 						"markdown-body",
 						"animate-opacity",
 						"container",

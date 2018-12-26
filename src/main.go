@@ -22,6 +22,10 @@ func main() {
 		blogPostHandler,
 	)
 	route.HandleFunc(
+		"/ask",
+		chatHandler,
+	)
+	route.HandleFunc(
 		"/{pageNum}",
 		homeHandler,
 	)
