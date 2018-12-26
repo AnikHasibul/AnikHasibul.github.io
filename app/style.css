@@ -2307,6 +2307,7 @@ a {
 
 .markdown-body h1 {
   padding-bottom: 0.3em;
+  font-weight:300;
   font-size: 3em;
 }
 .post-body h1, .post-body h2 {
