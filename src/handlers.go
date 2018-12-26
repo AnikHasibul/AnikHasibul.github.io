@@ -41,6 +41,7 @@ func homeHandler(c *router.Context) {
 	vecty.SetTitle("Home :: Hasibul Hasan (Anik) | Personal blog | @AnikHasibul")
 	homeCOMP := &homeComponent{
 		disabled: true,
+		nav:      NewNav(),
 	}
 	vecty.RenderBody(homeCOMP)
 	if c.Params["pageNum"] == "" {
@@ -52,6 +53,7 @@ func homeHandler(c *router.Context) {
 		)
 	}
 	docRoot := "raw.githubusercontent.com/anikhasibul/anikhasibul.github.io/published/weekly/"
+	homeCOMP.nav.setCurrent(c.Params["pageNum"])
 	homeCOMP.disabled = true
 	vecty.Rerender(homeCOMP)
 	defer func() {

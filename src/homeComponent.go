@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/gopherjs/vecty"
 	"github.com/gopherjs/vecty/elem"
 	"github.com/gopherjs/vecty/prop"
@@ -9,6 +11,7 @@ import (
 // homeComponent
 type homeComponent struct {
 	vecty.Core
+	nav      *nav
 	disabled bool
 	text     string
 }
@@ -149,6 +152,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 							"padding-32",
 						),
 					),
+					v.pagination(),
 				),
 			),
 			elem.Div(
@@ -160,5 +164,41 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 			),
 		),
 			footer()),
+	)
+}
+
+func (v *homeComponent) pagination() *vecty.HTML {
+	return elem.Div(
+		vecty.Markup(
+			vecty.Class("bar"),
+		),
+		vecty.If(v.nav.prev() != 0,
+			elem.Anchor(
+				vecty.Markup(
+					prop.Href(fmt.Sprintf("/%d", v.nav.prev())),
+					vecty.Class(
+						"left",
+						"btn",
+						"darker",
+						"round",
+					),
+				),
+				vecty.Text("« Previous"),
+			),
+		),
+		vecty.If(v.nav.next() != 0,
+			elem.Anchor(
+				vecty.Markup(
+					prop.Href(fmt.Sprintf("/%d", v.nav.next())),
+					vecty.Class(
+						"right",
+						"btn",
+						"darker",
+						"round",
+					),
+				),
+				vecty.Text("Next »"),
+			),
+		),
 	)
 }
