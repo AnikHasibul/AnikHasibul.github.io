@@ -12,13 +12,13 @@ func l(val bool) *vecty.HTML {
 	}
 	return elem.Div(
 		vecty.Markup(
-			vecty.Class("dark"),
+			vecty.Class("cyan"),
 			vecty.Style("position", "fixed"),
 			vecty.Style("z-index", "999"),
 			vecty.Style("top", "0"),
 			vecty.Style("left", "0"),
 			vecty.Style("width", "100%"),
-			vecty.Style("height", "3px"),
+			vecty.Style("height", "2px"),
 		),
 		elem.Div(
 			vecty.Markup(
@@ -33,7 +33,7 @@ func l(val bool) *vecty.HTML {
 				),
 				vecty.Style(
 					"height",
-					"3px",
+					"2px",
 				),
 			),
 		),
