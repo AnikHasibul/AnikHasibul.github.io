@@ -21,7 +21,7 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 				"overflow",
 				"hidden",
 			),
-			vecty.Class("darker"),
+			vecty.Class(),
 		),
 		elem.Header(
 			vecty.Markup(
@@ -92,12 +92,13 @@ func (v *postComponent) Render() vecty.ComponentOrHTML {
 		),
 		vecty.If(v.text != "", elem.Div(
 			vecty.Markup(
-				vecty.Class("row", "dark"),
+				vecty.Class("row"),
 			),
 			elem.Div(
 				vecty.Markup(
 					vecty.Class(
 						"col", "l2", "m2",
+						"hide-small",
 						"padding",
 					),
 				),

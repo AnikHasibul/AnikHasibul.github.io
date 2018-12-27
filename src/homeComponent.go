@@ -24,7 +24,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 				"overflow",
 				"hidden",
 			),
-			vecty.Class("darker"),
+			vecty.Class(),
 		),
 		elem.Header(
 			vecty.Markup(
@@ -91,11 +91,12 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 		),
 		vecty.If(v.text != "", elem.Div(
 			vecty.Markup(
-				vecty.Class("row", "dark"),
+				vecty.Class("row"),
 			),
 			elem.Div(vecty.Markup(
 				vecty.Class(
 					"col", "l2", "m2",
+					"hide-small",
 					"padding",
 				),
 			),
@@ -105,6 +106,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 					vecty.Class(
 						"col", "l8", "m8",
 						"markdown-body",
+						"home-body",
 						"animate-opacity",
 						"container",
 					),
@@ -147,8 +149,7 @@ func (v *homeComponent) pagination() *vecty.HTML {
 					vecty.Class(
 						"left",
 						"btn",
-						"darker",
-						"round",
+						"blue",
 					),
 				),
 				vecty.Text("« Previous"),
@@ -161,8 +162,7 @@ func (v *homeComponent) pagination() *vecty.HTML {
 					vecty.Class(
 						"right",
 						"btn",
-						"darker",
-						"round",
+						"blue",
 					),
 				),
 				vecty.Text("Next »"),

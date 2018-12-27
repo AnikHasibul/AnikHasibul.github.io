@@ -1160,41 +1160,29 @@ a {
 
 .animate-left {
 	position: relative;
-	animation: animateleft 1s
+	animation: animateleft 0.9s;
 }
 
 @keyframes animateleft {
 	0%{
 		left: -300px;
-		opacity: 0;
-	}
-	90% {
-		left: 30px;
-		opacity: 1;
 	}
 	100% {
 		left: 0;
-		opacity: 1;
 	}
 }
 
 .animate-right {
 	position: relative;
-	animation: animateright 1s
+	animation: animateright 0.9s;
 }
 
 @keyframes animateright {
 	0%{
 		right: -300px;
-		opacity: 0;
-	}
-	90% {
-		right: 30px;
-		opacity: 1;
 	}
 	100% {
 		right: 0;
-		opacity: 1;
 	}
 }
 
@@ -1490,7 +1478,7 @@ a {
 .blue,
 .hover-blue:hover {
 	color: #fff!important;
-	background-color: #79ACF7!important
+	background-color: #0055FF!important
 }
 
 .light-blue,
@@ -2051,23 +2039,18 @@ a {
 }
 
 .markdown-body a {
-  color: #107C10;
   font-weight:120%;
-  border-bottom: 1px dashed #107C10;
-  text-decoration: none;
-}
-.markdown-body h2 a {
-  color: #111;
-  border-bottom: 2px dashed #00CC6A;
+  border-bottom: 1px dashed #0055FF;
   text-decoration: none;
 }
 
-.markdown-body a:hover {
-  border-bottom: 1px solid #998;
+.home-body h2 a {
+  color: #0055FF;
+  border-bottom: none;
 }
 
 .markdown-body strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .markdown-body hr {
@@ -2273,7 +2256,7 @@ a {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 350;
-  line-height: 1.50;
+  line-height: 1.25;
 }
 
 .markdown-body h1 .octicon-link,
@@ -2306,8 +2289,9 @@ a {
 }
 
 .markdown-body h1 {
+  color: #0055FF;
   padding-bottom: 0.3em;
-  font-weight:300;
+  font-weight:250;
   font-size: 3em;
 }
 .post-body h1, .post-body h2 {
@@ -2320,7 +2304,6 @@ a {
 
 .markdown-body h3 {
   font-size: 1.55em;
-  border-bottom: 1px dashed #d1d1d1;
 }
 
 .markdown-body h4 {
@@ -2513,6 +2496,9 @@ a {
 
 .markdown-body hr {
   border-bottom-color: #eee;
+}
+.markdown-body p {
+  text-align: justify;
 }
 .markdown-body .pl-c {
   color: #6a737d;
