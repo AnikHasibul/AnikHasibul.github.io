@@ -30,6 +30,7 @@ func NewNav() *nav {
 		year,
 		week,
 	)
+	n.start = 20191
 	n.end, _ = strconv.Atoi(current)
 	return n
 }

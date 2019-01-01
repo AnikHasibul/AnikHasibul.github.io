@@ -31,7 +31,6 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 				vecty.Class(
 					"container",
 					"padding-16",
-					"darker",
 					"bar",
 					"center",
 					"border-blue",
@@ -109,6 +108,7 @@ func (v *homeComponent) Render() vecty.ComponentOrHTML {
 						"home-body",
 						"animate-opacity",
 						"container",
+						"padding",
 					),
 				),
 				elem.Div(
