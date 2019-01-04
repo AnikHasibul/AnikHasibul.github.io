@@ -30,7 +30,7 @@ we asked `bash` to echo the `stdin`, and the `stdin` is containing the body of `
 ### cut 
 
 ```shell
-cut -d "" -f1 /etc/passwd
+$ cut -d "" -f1 /etc/passwd
 ```
 
 #### How it works?
@@ -41,7 +41,7 @@ It reads data from files. Its a file reader but a bit uncommon.
 ### date
 
 ```shell
-date -f /etc/passwd
+$ date -f /etc/passwd
 ```
 
 ## Conclusion:
