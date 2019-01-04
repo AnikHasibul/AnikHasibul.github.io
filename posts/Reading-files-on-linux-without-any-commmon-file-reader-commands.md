@@ -1,4 +1,4 @@
-# Reading files on linux without any comon file reader commands!
+# Reading files on linux without any common file reader commands!
 
 > 2 January, 2018
 
