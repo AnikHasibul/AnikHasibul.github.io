@@ -1,6 +1,6 @@
 # Making A DDOS Tool With Go
 
-Hi there today I'm going to make a simple tool for DDOS attack. And it's fully writen in Golang. No additional plugin required.
+Hi there today I'm going to make a simple tool for DDOS attack. And it's fully written in Golang. No additional plugin required.
 
 ## Our Attack Map:
 
@@ -20,7 +20,7 @@ func Request(uri string){
 }
 ```
 
-The `http.Head(uri)` recieves only headers from a url. We don't need the content of the page. So we're not going to process further things.
+The `http.Head(uri)` receives only headers from a url. We don't need the content of the page. So we're not going to process further things.
 
 ## Attaaaaaaaaack!
 
@@ -82,4 +82,4 @@ Now wait for 30-40 seconds after getting the `...` like output!
 
 Voila!
 
-We've succesfully shutted down a server by a single attack :v
+We've successfully shutted down a server by a single attack :v
